@@ -34,7 +34,6 @@ int main(){
 
 	writeToFile(psi0,"psi_0", dx,Nx,xmin);
 
-	LinStep(psi0, dx, dt/2.0, Nx);
 
 	for (int i = 1; i <= Na; i++) {
 
