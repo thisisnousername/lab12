@@ -55,7 +55,7 @@ int main(){
 }
 //-----------------------------------
 void nlstep(cmplx* const v, const double dt, const int N){
-	for(int i=0;i<N;i++) v[i]=v[i]*exp(cmplx(0.0,norm(v[i])*norm(v[i])*dt));
+	for(int i=0;i<N;i++) v[i]=v[i]*exp(cmplx(0.0,-norm(v[i])*dt));
 }
 //-----------------------------------
 void linstep(cmplx* const v, const double dt, const double dx, const int N)
